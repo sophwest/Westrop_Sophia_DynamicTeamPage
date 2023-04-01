@@ -1,0 +1,180 @@
+/* BASICS */
+
+body {
+    font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000E20;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    /* 1200px messed up my XD numbers so i had to do 1640 oops */
+    max-width: 1640px;
+    margin: 0 auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 122px);
+	grid-column-gap: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img { 
+	border: none; /*Remove border if image is a link*/
+}
+
+/* COMMON ELEMENTS */
+
+.nav li {
+	display: inline;
+	list-style-type: none;
+    margin-left: 50px;
+}
+
+.nav li a {
+    color: #ffffffc9;
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+	
+.nav a:hover { 
+	color:#ffffff;
+    text-shadow: 1px 1px 3px #D7FF8B;
+}
+
+.logo {
+    width: 8em;
+    transition: all 0.3s ease-in-out; 
+}
+
+.logo:hover { 
+	transform: scale(1.05);
+}
+
+.bigtitle {
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+    font-size: 65px;
+}
+
+.smalltitle {
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.bodytext {
+    font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+    font-size: 36px; 
+    font-weight: bold;
+}
+
+
+/* HEADER */
+
+#header-con {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	/* top: 0px;
+	position: sticky;
+	z-index: 10; */
+	height: 160px;
+    background-color: #000E20;
+}
+
+#header-logo {
+    grid-column: 1/3;
+    padding-left: 30px;
+}
+
+#main-nav {
+    grid-column: 4/-1;
+    margin-top: 52px;
+}
+
+
+/* TEAM SECTION */
+
+
+
+/* FOOTER */
+
+#footer-con {
+    background-color: #000E20;
+}
+
+/* newsletter signup */
+#footer-newsletter {
+    grid-column: 1/9;
+}
+
+#footer-newsletter h3 {
+    grid-column: 1/5;
+    padding-top: 50px;
+    text-shadow: 2px 2px 3px #D7FF8B;
+}
+
+#news-email {
+	display: inline-block;
+	font-family: inherit;
+	font-size: 26px;
+	border: none;
+	margin-top: 60px;
+	padding-left: 20px;
+	width: 674px;
+	height: 80px;
+    border-radius: 10px;
+}
+
+#news-email:focus {
+outline: 2px solid #D7FF8B;
+}
+
+#signup {
+    font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+	font-size: 30px;
+    background-color:#cdff70;
+	color: #000;
+	width: 260px;
+	height: 80px;
+	border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out; 
+}
+
+#signup:hover {
+    background-color: #D7FF8B;
+    cursor: pointer;
+}
+
+#footer-logo {
+    grid-column: 9/-1;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+#footer-nav {
+    grid-column: 1/-1;
+    margin-top: 52px;
+    text-align: center;
+}
+
+#footer p {
+    grid-column: 1/-1;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #ffffff50;
+}
