@@ -41,6 +41,17 @@ function hideText() {
     targetDiv.classList.add('hidden');
 }
 
+function changeBGPink() {
+    var infoBox = document.querySelector("#member-info");
+    infoBox.style.backgroundColor="#ff7e8f";
+}
+
+function changeBGTeal() {
+    var infoBox = document.querySelector("#member-info");
+    infoBox.style.backgroundColor="#75d1b2";
+}
+
 sophiaPic.addEventListener("click", getMemberInfo);
 astaPic.addEventListener("click", getMemberInfo);
-    
+sophiaPic.addEventListener("click", changeBGTeal);
+astaPic.addEventListener("click", changeBGPink);
