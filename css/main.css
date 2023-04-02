@@ -36,6 +36,10 @@ img {
 	border: none; /*Remove border if image is a link*/
 }
 
+p {
+    margin-bottom: 10px;
+}
+
 /* COMMON ELEMENTS */
 
 .nav li {

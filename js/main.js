@@ -5,6 +5,15 @@ let sophiaPic = document.querySelector("#sophia-pic"),
 
     let memberInfo = [
         {
+            name : "Sophia", 
+            nickname : "Nickname: Soph",
+            age : "Age: 25",
+            bday : "Birthday: April 9",
+            hobby : "Hobbies: Figure collecting, art",
+            blurb : "One day at a time..."
+        },
+
+        {
             name : "Asta", 
             nickname : "Nickname: Armpit girl",
             age : "Age: ??",
@@ -23,6 +32,13 @@ function getMemberInfo() {
     document.querySelector(".birthday").textContent = memberInfo [teamMember].bday;
     document.querySelector(".hobby").textContent = memberInfo [teamMember].hobby;
     document.querySelector(".blurb").textContent = memberInfo [teamMember].blurb;
+
+    hideText();
+}
+
+function hideText() {
+    let targetDiv = document.querySelector("#instructions");
+    targetDiv.classList.add('hidden');
 }
 
 sophiaPic.addEventListener("click", getMemberInfo);
